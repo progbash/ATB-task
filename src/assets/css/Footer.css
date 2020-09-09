@@ -1,0 +1,21 @@
+.Footer{
+    color: #9B9B9B;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: .3px solid #9B9B9B;
+    padding-top: 20px;
+}
+.Footer div p{
+    font-size: 10px;
+}
+.Footer div a{
+    text-decoration: none;
+    color: #9B9B9B;
+}
+.FooterRights img{
+    width: 40%;
+}
+.FooterSocial div a{
+    margin-right: 10px;
+}

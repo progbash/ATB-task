@@ -1,0 +1,23 @@
+@media screen and (max-width: 992px){
+    .CustomContainer{
+        width: 90%;
+    }
+    .Application{
+        width: 100% !important;
+    }
+    .Buttons{
+        flex-wrap: wrap;
+    }
+    .Buttons a{
+        margin-bottom: 10px;
+    }
+    .UserDetailsPopup{
+        width: 70% !important;
+    }
+    .Footer{
+        flex-wrap: wrap;
+    }
+    .Footer div{
+        width: 100%;
+    }
+}

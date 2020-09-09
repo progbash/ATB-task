@@ -1,0 +1,27 @@
+.go2067797667:hover, .go2067797667::before{
+    color: rgb(255, 210, 23) !important;
+}
+.go2478912419:hover, .go2478912419::before{
+    color: rgb(255, 210, 23) !important;
+}
+.go2478912419{
+    color: rgb(255, 210, 23) !important;
+}
+.go2478912419:before{
+    background-color: rgb(255, 210, 23) !important;
+}
+.go2478912419, .go767851704{
+    border-bottom: 4px solid rgb(255, 210, 23) !important;
+}
+.go767851704:hover, .go767851704::before{
+    color: rgb(255, 210, 23) !important;
+}
+.go767851704:before{
+    background-color: rgb(255, 210, 23) !important;
+}
+.go2067797667:before{
+    content: url('../images/circle.svg') !important;
+    color: rgb(255, 210, 23) !important;
+    width: auto !important;
+    line-height: 28px !important;
+}

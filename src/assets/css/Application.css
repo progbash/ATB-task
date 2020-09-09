@@ -1,0 +1,43 @@
+.Application{
+    width: 50%;
+    color: #525252;
+    text-align: center;
+    font-weight: lighter;
+    margin: 0px auto 30px auto;
+}
+.Application form{
+    margin-top: 30px;
+    text-align: left;
+}
+.Application form label{
+    font-size: 14px;
+}
+.Application form input[type="text"], .Application form input[type="email"], .Application form select{
+    color: #525252;
+    outline-color: #FFD217;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: rgba(244, 245, 246, 0.5);
+    padding: 0 5px 0 10px;
+    margin: 10px 0px;
+    -ms-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+.Buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.Buttons a{
+    text-decoration: none;
+}
+.Application .Buttons a:first-child a{
+    /* display: none; */
+    background-color: transparent;
+    border: 1px solid #525252;
+}

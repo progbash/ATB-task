@@ -1,0 +1,17 @@
+.Header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.HeaderLogoContainer{
+    width: 6%;
+}
+.HeaderLogoContainer img{
+    width: 100%;
+}
+.LangSelectionContainer select{
+    background-color: #F4F5F6;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
