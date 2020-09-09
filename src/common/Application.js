@@ -36,7 +36,7 @@ const nextStyle = {
     'outline': 'none'};
 
 const steps = [
-    { name: 'Müştəri məlumatları, component: <ClientDetails /> },
+    { name: 'Müştəri məlumatları', component: <ClientDetails /> },
     { name: 'İstifadəçi məlumatları', component: <UserDetails /> }
 ]
 
