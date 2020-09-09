@@ -7,32 +7,34 @@ import UserDetails from '../layout/UserDetails';
 
 import MultiStep from '../../node_modules/react-multistep';
 
+import $ from "jquery";
+
 const prevStyle = {
     'background': 'transparent',
-    'border-radius': '5px',
+    'borderRadius': '5px',
     'height': '30px',
     'width': '150px',
     'display': 'block',
-    'text-decoration': 'none',
+    'textDecoration': 'none',
     'color': 'black',
-    'line-height': '30px',
+    'lineHeight': '30px',
     'border': '1px solid black',
     'cursor':'pointer',
-    'margin-top': '10px',
+    'marginTop': '30px',
     'outline': 'none'};
 
 const nextStyle = {
     'background': '#FFD217',
-    'border-radius': '5px',
+    'borderRadius': '5px',
     'height': '30px',
     'width': '150px',
     'display': 'block',
-    'text-decoration': 'none',
+    'textDecoration': 'none',
     'color': 'black',
-    'line-height': '30px',
+    'lineHeight': '30px',
     'border': '1px solid transparent',
     'cursor':'pointer',
-    'margin-top': '10px',
+    'marginTop': '30px',
     'outline': 'none'};
 
 const steps = [
@@ -41,6 +43,10 @@ const steps = [
 ]
 
 class Application extends Component{
+    componentDidMount(){
+        $(".go2478912419 span").html("MÜŞTƏRİ");
+        $(".go2067797667 span").html("İSTİFADƏÇİ")
+    }
     render(){
         return(
             <div className="Application">

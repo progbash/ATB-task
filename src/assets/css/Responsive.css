@@ -5,6 +5,9 @@
     .Application{
         width: 100% !important;
     }
+    ol{
+        display: none;
+    }
     .Buttons{
         flex-wrap: wrap;
     }
