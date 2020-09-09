@@ -9,26 +9,23 @@ class UserDetails extends Component{
     constructor(props){
         super(props);
         this.state = {
-            userInput: '',
             list: []
         }
     }
-
-    changeUserInput(input){
-        this.setState({
-                userInput: input
-            }
-        );
-    }
-
-    addToUserList(e, input){
-        e.preventDefault();
-        let listArray = this.state.list;
-        listArray.push(input);
-        this.setState({
-            list: listArray
+    onChangeValue = event => {
+        this.setState({ value: event.target.value });
+    };
+     
+    onAddItem = () => {
+        this.setState(state => {
+        const list = state.list.concat(state.value);
+     
+        return {
+                list,
+                value: '',
+            };
         });
-    }
+    };
 
     async componentDidMount(){
 
@@ -45,8 +42,8 @@ class UserDetails extends Component{
             user_details_overlay.fadeOut();
         });
     }
+
     render(){
-        console.log(this.state.user_list);
         return(
             <div className="UserDetails">
                 <div className="UserDetailsOverlay">
@@ -60,8 +57,8 @@ class UserDetails extends Component{
                         <form>
                             <label>S.A.A</label><br/>
                             <input 
-                            onChange={(e)=>this.changeUserInput(e.target.value)}
-                            value={this.state.userInput} 
+                            value={this.state.value}
+                            onChange={this.onChangeValue}
                             type="text" 
                             placeholder="Məmmədov Kamran Zaur oğlu"/><br/>
                             <label>FİN Kod</label><br/>
@@ -72,15 +69,21 @@ class UserDetails extends Component{
                             <input type="text" placeholder="progbash"/><br/>
                             <label>Mobil nömrə</label><br/>
                             <input type="text" placeholder="+994554371570"/><br/>
-                            <input type="checkbox" /><label>SMS OTP</label>
-                            <AddButton className="AddUser" AddButtonText="Əlavə Et"/>
+                            <input type="checkbox" /><label>SMS OTP</label><br/>
+                            <button
+                                className="AddUserBtn"
+                                type="button"
+                                onClick={this.onAddItem}
+                                disabled={!this.state.value}>Əlavə Et</button>
                         </form>
                     </div>
                 </div>
 
                 <p>İstifadəçilər</p>
                 <ul>
-                    {this.state.list.map((user)=><li>{user}</li>)}
+                    {(this.state.list || []).map(user => (
+                        <li key={user}>{user}</li>
+                    ))}
                 </ul>
                 <AddButton AddButtonText="+"/>
             </div>
