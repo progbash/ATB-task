@@ -12,6 +12,7 @@ class UserDetails extends Component{
             list: []
         }
     }
+    
     onChangeValue = event => {
         this.setState({ value: event.target.value });
     };
@@ -39,6 +40,10 @@ class UserDetails extends Component{
         });
 
         close_overlay_btn.click(function(){
+            user_details_overlay.fadeOut();
+        });
+
+        $(".AddUserBtn").click(function(){
             user_details_overlay.fadeOut();
         });
     }
